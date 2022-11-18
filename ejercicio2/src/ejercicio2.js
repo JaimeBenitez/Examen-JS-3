@@ -11,8 +11,8 @@
 
 function isLeapYear(num1,num2){
     if (typeof(num1) == 'number' && typeof(num2) == 'number' && num1 <= 2500 && num2 <= 2500 && num1 >= 2001 && num2 >= 2001){
-        let year1 = num1
-        let year2 = num2
+        let year1 = Math.round(num1)
+        let year2 = Math.round(num2)
         
         
         let bisiestos = [];
