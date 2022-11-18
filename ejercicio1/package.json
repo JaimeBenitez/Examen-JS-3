@@ -1,0 +1,8 @@
+{
+  "scripts":{
+    "doc": "jsdoc -c jsdoc.json"
+  },
+  "dependencies": {
+    "jsdoc": "^4.0.0"
+  }
+}
