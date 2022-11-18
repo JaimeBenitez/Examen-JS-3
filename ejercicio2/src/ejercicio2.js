@@ -1,0 +1,19 @@
+function isLeapYear(num1,num2){
+    if (typeof(num1) == 'number' && typeof(num2) == 'number' && num1 <= 2500 && num2 <= 2500 && num1 >= 2001 && num2 >= 2001){
+        let year1 = num1
+        let year2 = num2
+        
+        
+        let bisiestos = [];
+        for(let i = year1; i <= year2; i++){
+            if(i%4 == 0 || i%400 == 0 && i%100 == 0){
+                bisiestos.push(i);
+        }
+    }
+        return bisiestos;
+    } else {
+        alert('Numeros introducidos no validos')
+    }
+
+}
+document.write(`<p>${isLeapYear(2001,2500).join(', ')}</p>`)
